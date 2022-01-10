@@ -1,0 +1,66 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 7vh;
+  background: rgb(11, 63, 160);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+.logo {
+  color: rgb(223, 215, 215);
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: .2rem;
+}
+
+
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  list-style: none;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+
+
+/* Burger */
+
+
+.burger div {
+  width: 25px;
+  height: 5px;
+  background-color: #fff;
+  margin: 4px;
+}
+
+
+.burger {
+  display: none;
+}
+
+
+@media (max-width: 800px) {
+  nav {
+    min-height: 8vh;
+  }
+  
+  .nav-links {
+    width: 70%;
+  }
+}
